@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriCoin - Sign In</title>
+  <link rel="stylesheet" href="sign-in.css">
+</head>
+<body>
+  <header>
+    <span class="title"><a href="/">AgriCoin</a></span>
+  </header>
+  <div id="view">
+    <form id="sign-in" action="sign-up" method="post" enctype="multipart/form-data">
+      <label for="email">Email</label>
+      <input type="text" class="form email" name="email" autocomplete="email" required autofocus>
+      <br><label for="cpf">CPF</label>
+      <input type="text" class="form cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required autofocus>
+      <br><label for="password">Password</label>
+      <input type="password" class="form password" name="password" autocomplete="new-password" required autofocus>
+      <p id="error-message" hidden></p>
+      <br><a id="sign-up" href="sign-up"><p>Sign Up?</p></a>
+      <br><input type="submit" value="Sign In">
+    </form>
+  </div>
+  <noscript>JavaScript disabled?</noscript>
+  <script src="sign-in.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  font-family: monospace, monospace;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 15px;
+  padding: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+
+header > .title {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+header > .title > a {
+  color: black;
+}
+
+#view {
+  border: 2px solid black;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 2px solid black;
+  padding: 30px;
+}
+
+form > input {
+  height: 30px;
+}
+
+form > input[type="submit"] {
+  width: 50%;
+  align-self: center;
+}
+
+#sign-in {
+  align-self: flex-end;
+  text-decoration: none;
+  color: black;
+}

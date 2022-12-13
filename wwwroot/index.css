@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  font-family: monospace, monospace;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 15px;
+  padding: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+
+header > .title {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+header > .user {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header > .user > .name {
+  margin: 15px;
+  font-size: 20px;
+}
+
+header > .user > .icon {
+  width: 35px;
+  height: 35px;
+  background-size: 70.7%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#view {
+  border: 2px solid black;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  padding: 15px;
+}
+
+#gfx {
+  border: 1px solid black;
+  display: inline-block;
+  width: 50%;
+  height: 80%;
+}
+
+#actions {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 1px;
+  height: calc(20% - 25px);
+}
+
+#actions > button {
+  flex: 1;
+  margin: 10px;
+}
+
+#sign-in {
+  text-decoration: none;
+  color: black;
+}
